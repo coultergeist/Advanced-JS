@@ -1,0 +1,18 @@
+{
+  "name": "jsdoc",
+  "version": "1.0.0",
+  "description": "Javascript documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Advanced-JS"
+  },
+  "keywords": [
+    "json"
+  ],
+  "author": "Danielle Coulter",
+  "license": "ISC"
+}
