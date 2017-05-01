@@ -26,7 +26,7 @@ function serveStatic(res, path, contentType, responseCode){
 
 
 //begin createServer()
-http.createServer(){
+http.createServer(function(req, res){
     
     let url = req.url.split("?"), params = qs.parse(url[1]), path = url[0].toLowerCase();
     
@@ -50,13 +50,13 @@ http.createServer(){
             res.end("We have found a " + params.type + "\n" + results);
             break; 
             
-        case '/add';
+        case '/add':
             boats.add(params);
             res.writeHead(200, {'Content-Type': 'text/plain'});
             res.end('You have just added the boat ' + '\n' + 'type:' + params.type + 'year: ' + params.year + 'beam: ' + params.beam + 'length: ' + params.length + 'price: ' + params.price);
             break;
             
-        case '/delete';
+        case '/delete':
             var deletethis = boats.delete(params.type);
             console.log(boats.delete(params.type))
             res.writeHead(200, {'Content-Type': 'text/plain'});
@@ -68,4 +68,4 @@ http.createServer(){
             res.end('404; Page not found.');
     }//end switch
     
-})listen(process.env.PORT || 3000);//end createServer()
+}).listen(process.env.PORT || 3000);//end createServer()

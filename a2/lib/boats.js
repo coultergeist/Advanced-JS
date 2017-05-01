@@ -1,6 +1,6 @@
 // a2/lib/boat.js
 
-"use strict"
+"use strict";
 
 
 //begin boat array
