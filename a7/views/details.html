@@ -1,0 +1,22 @@
+<!-- // a7/views/details.html -->
+
+{{#if result}}
+    
+    <h2>Here are the details for sailboat: {{result.brandname}} </h2>
+        
+        <ul>
+            <li>ID Number: {{result.id}}</li>
+            <li>Boat: {{result.brandname}}</li>
+            <li>Year: {{result.year}}</li>
+            <li>Beam: {{result.beam}}</li>
+            <li>Length: {{result.size}}</li>
+            <li>Price: {{result.price}}</li>
+        
+         </ul>
+         
+        <p><a href="/delete?brandname={{result.brandname}}">Delete</a></p>
+    
+    {{else}}
+    <h2>{{result.brandname}} Hmmm, that sailboat cannot be found</h2>
+    
+{{/if}}

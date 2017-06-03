@@ -1,0 +1,27 @@
+<!doctype>
+<!-- a7/views/layouts/main.html -->
+
+<html>
+
+<head>
+    <title>Sail Boat Listings</title>
+</head>
+    
+    <body>
+            <header>Sail Boat Listings</header>
+            <hr>
+            {{{body}}}
+            <hr>
+        
+            <div class="nav">
+            {{! only show home link if on detail page }}
+            {{#if boats}}{{else}}<a href="/">Home</a> |{{/if}}
+            
+            <a href="/about">About</a>
+            </div>
+        
+        <footer>&copy; D.M. Coulter</footer>
+        
+    </body>
+    
+</html>

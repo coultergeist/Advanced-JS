@@ -4,7 +4,7 @@
 
 "use strict"
 
-let ham = require ("./lib/boats.js"); 
+let boat = require ("./lib/boats.js"); 
 
 const express = require("express"); 
 const app = express(); 

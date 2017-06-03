@@ -2,7 +2,7 @@
 //chai/mocha testing
 
 var expect = require("chai").expect;
-var ham = require("../lib/boat");
+var boat = require("../lib/boat");
 
 
 // Test 1 - Tests that work the search page.  
@@ -13,7 +13,7 @@ describe("Boat info module tests", () => {
  });
  
  it("fails w/ invalid boat", () => {
-   var result = ham.get("invalid");
+   var result = boat.get("invalid");
    expect(result).to.be.undefined;
  });
 
@@ -27,7 +27,7 @@ it("adds requested boat", function(){
     });
     
 it("add fails", function(){
-        var result = ham.add({brandname: "Failboat", year: "2000", beam: "11'", size: "31'", price: "$20,001"});
+        var result = boat.add({brandname: "Failboat", year: "2000", beam: "11'", size: "31'", price: "$20,001"});
         expect(result).to.be.isUndefined; 
     });
     
@@ -35,12 +35,12 @@ it("add fails", function(){
 // Test 3 - Tests that work the delete page.     
 
 it("deletes boat info", function(){
-        var result = ham.delete("Ericson");
+        var result = boat.delete("Ericson");
         expect(result).to.deep.equal({"deleted": true, "total": 5});
     });
 
 it("unable to delete boat", function(){
-        var result = ham.delete("XXXXXXX");
+        var result = boat.delete("XXXXXXX");
         expect(result).to.deep.equal({"deleted": false, "total": 5});
     });    
     
