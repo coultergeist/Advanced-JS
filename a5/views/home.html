@@ -1,0 +1,22 @@
+<!-- // a5/views/home.html -->
+
+<h2>Sailboats for Sale: </h2>
+
+<form method="POST" action="/get">
+    
+    <input type="text" name="brandname" placeholder="brandname" required maxlength="20">
+    <button>SEARCH</button>
+    
+</form>
+
+{{#if boats}}
+
+<h2>Sailboat Listings:</h2>
+
+{{/if}}
+
+{{#each boats}}
+    <li><a href="/get?brandname={{brandname}}">{{brandname}}</a></li>
+{{/each}}
+
+</body>
