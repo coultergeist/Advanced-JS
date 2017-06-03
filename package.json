@@ -1,5 +1,5 @@
 {
-  "name": "workspace",
+  "name": "itc230",
   "version": "1.0.0",
   "description": "Homework 2, Advanced JS functions",
   "main": "index.js",
@@ -20,7 +20,7 @@
     "javascript"
   ],
   "author": "Danielle Coulter",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/coultergeist/advanced-js/issues"
   },
