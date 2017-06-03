@@ -1,18 +1,18 @@
 <html>
-<!-- a3/public/views/delete.html--> 
+<!-- // a4/views/delete.html -->
 
     <body>
-        <a href="/">Home</a>
+        <a href="/">Home: Let's update the inventory!</a>
         
     {{#if result.deleted}}
         
-        <h2>{{type}} deleted.</h2>
+        <h2>{{brandname}} deleted.</h2>
         remaining total: {{result.total}}
         
         
     {{else}}
         
-        <h2>{{type}} Not Found!</h2>
+        <h2>{{brandname}} Not Found!</h2>
         
     {{/if}}
         

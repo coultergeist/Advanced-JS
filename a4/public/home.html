@@ -1,5 +1,5 @@
 <html>
-<!-- a3/public/home.html--> 
+<!-- a4/public/home.html--> 
     
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -13,5 +13,16 @@
             <button>SEARCH</button>
             
         </form>    
+        
+        <form method="POST" action="/add">
+            <input type="text" name="brandname" placeholder="Enter the Brandname here" required maxlength="30">
+            <input type="text" name= "year" placeholder="Enter the Year here" required maxlength="4">
+            <input type="text" name= "beam" placeholder="Enter the Beam here" required maxlength="10">
+            <input type="text" name= "size" placeholder="Enter the Size here" required maxlength="10">
+            <input type="text" name= "price" placeholder="Enter the Price here" required maxlength="100">
+
+            <button>Add Boat</button>
+        </form>
+        
     </body>
 </html>

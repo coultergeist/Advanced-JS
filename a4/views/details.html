@@ -5,16 +5,16 @@
         <a href="/">Home</a>
     {{#if result}}
     
-        <h2>Here are the boat's details: {{callsign}} </h2>
+        <h2>Here are the boat's details: {{brandname}} </h2>
         
-        <li>Boat: {{result.type}}</li>
+        <li>Boat: {{result.brandname}}</li>
         <li>Year: {{result.year}}</li>
         <li>Beam: {{result.beam}}</li>
-        <li>Length: {{result.length}}</li>
+        <li>Size: {{result.size}}</li>
         <li>Price: {{result.price}}</li>
     
         <p>
-        <a href="/delete?type={{result.type}}">Delete</a>
+        <a href="/delete?brandname={{result.brandname}}">Delete</a>
         </p>
         
     {{else}}

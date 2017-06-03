@@ -1,10 +1,9 @@
 //Danielle Coulter
-//a3 index.js 
-//Converting a2 to a3 using body-parser and express-handlebars
+//a4 index.js 
 
 "use strict"
 
-let ham = require ("./lib/boats.js"); 
+let boat = require ("./lib/boats.js"); 
 
 const express = require("express"); 
 const app = express(); 
