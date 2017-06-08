@@ -111,7 +111,7 @@ app.get('/api/boat/delete/:brandname', (req,res) => {
 
 // Get. add. 
 
-app.get('/api/boat/add/:brandname/:operator/:zip', (req, res, next) => {
+app.get('/api/boat/add/:brandname/:year/:beam/:size/:price', (req, res, next) => {
     // find and update existing items, or add a new one. 
     let brandname = req.params.brandname; 
     Boat.update({ brandname: brandname}, {brandname:brandname, year: req.params.year, beam: req.params.beam, size: req.params.size, price: req.params.price }, {upsert: true }, (err, result) => {

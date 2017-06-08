@@ -1,4 +1,4 @@
-// a8/models/boat.js
+// a7/models/boat.js
 
 var credentials = require("../lib/credentials"); 
 
