@@ -1,11 +1,11 @@
 {
-  "name": "a7",
+  "name": "a8",
   "version": "1.0.0",
   "description": "Homework 2, Advanced JS functions",
   "main": "index.js",
   "dependencies": {
     "6": "^0.0.1",
-    "express": "^4.15.2"
+    "express": "^4.15.3"
   },
   "devDependencies": {},
   "scripts": {
