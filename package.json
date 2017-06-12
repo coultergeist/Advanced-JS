@@ -1,24 +1,28 @@
 {
-  "name": "a8",
+  "name": "itc230",
   "version": "1.0.0",
-  "description": "Homework 2, Advanced JS functions",
+  "description": "ITC 230 Advanced JS",
   "main": "index.js",
   "dependencies": {
-    "6": "^0.0.1",
-    "express": "^4.15.3"
+    "body-parser": "^1.15.0",
+    "cheerio": "^0.20.0",
+    "cors": "^2.7.1",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.4.15"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "-test"
-  },
+ 
   "repository": {
     "type": "git",
     "url": "git+https://github.com/coultergeist/advanced-js.git"
   },
+  
   "keywords": [
     "json",
     "javascript"
   ],
+  
+  
   "author": "Danielle Coulter",
   "license": "MIT",
   "bugs": {
